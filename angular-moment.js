@@ -1,5 +1,20 @@
 /* angular-moment.js / v0.10.1 / (c) 2013, 2014, 2015 Uri Shaked / MIT Licence */
-
+**
+ * Add a module for use with commonjs(WebPack)
+ * Add to your webpack.config.js with:
+ * 
+ * module.exports = {
+ *  resolve: {
+ *    alias: {
+ *      "angular-moment": 'angular-moment/angular-moment'
+ *    }
+ *  }
+ * }
+ */
+if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports ===
+  exports) {
+  module.exports = 'angularMoment';
+}
 'format amd';
 /* global define */
 
